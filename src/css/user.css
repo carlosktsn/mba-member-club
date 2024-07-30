@@ -1,0 +1,28 @@
+.user{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    & img{
+        background: var(--gradient-base);
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+    }
+
+    & .info{
+        & h1{
+            font: var(--title-sm);
+        }
+
+        & p{
+            font: var(--text-xs);
+            color: var(--gray-500);
+        }
+    }
+}
