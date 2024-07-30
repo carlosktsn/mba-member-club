@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --pink: #D658B3;
     --green: #45B442;
@@ -21,4 +27,13 @@
     --text-md: normal 1rem/1.4 var(--ff-base);
     --text-sm: normal 0.875rem/1.4 var(--ff-base);
     --text-xs: normal 0.75rem/1.4 var(--ff-base);
+}
+
+body {
+    font-family: var(--ff-base);
+    background-color: var(--gray-200);
+}
+
+.container {
+    padding: 0.75rem;
 }

@@ -1,11 +1,14 @@
 {
   "name": "mba-member-club",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project made for MBA at Rocketseat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos Almeida",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
 }
