@@ -37,3 +37,7 @@ body {
 .container {
     padding: 0.75rem;
 }
+
+.hidden{
+    display: none;
+}
