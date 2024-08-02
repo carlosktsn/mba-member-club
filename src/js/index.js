@@ -1,6 +1,7 @@
 import { getClient } from "./api.js";
 import { displayInfo } from "./builder.js";
 import { verifyInput, onlyNumbers } from "./form.js";
+import '../css/index.css';
 
 const cardInput = document.querySelector('#card-input');
 const searchButton = document.querySelector('#search');
