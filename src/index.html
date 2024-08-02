@@ -15,8 +15,8 @@
             <img src="assets/Logo.png" alt="Member Club Logo" id="logo">
             <form action="submit">
                 <div class="input-container">
-                    <input type="text" name="card-id" placeholder="ID do cartão" title="Card ID">
-                    <div class="button" title="Search Button">
+                    <input type="text" id="card-input" placeholder="ID do cartão" title="Card ID">
+                    <div class="button" title="Search Button" id="search" disabled>
                     </div>
                 </div>
             </form>
@@ -29,7 +29,7 @@
                     <p id="client-since">Pesquise um cartão acima</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card hidden">
                 <div class="card-header">
                     <div>
                         <h2>Cartão Fidelidade</h2>
@@ -40,14 +40,9 @@
                     </div>
                 </div>
                 <div class="slots">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
                 </div>
             </div>
-            <div class="progress">
+            <div class="progress hidden">
                 <div>
                     <h2><strong>0</strong> cortes restantes</h2>
                     <div class="progress-bar">
@@ -58,28 +53,16 @@
                 <div class="gift">
                 </div>
             </div>
-            <div class="history">
+            <div class="history hidden">
                 <div class="history-header">
                     <h2>Histórico</h2>
                     <p>0 cortes</p>
                 </div>
                 <ul>
-                    <li>
-                        <p class="date">31/01/2021</p>
-                        <p class="hour">11:00</p>
-                    </li>
-                    <li>
-                        <p class="date">31/01/2021</p>
-                        <p class="hour">11:00</p>
-                    </li>
-                    <li>
-                        <p class="date">31/01/2021</p>
-                        <p class="hour">11:00</p>
-                    </li>
                 </ul>
             </div>
         </main>
     </div>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

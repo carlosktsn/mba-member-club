@@ -53,8 +53,9 @@ form{
         background-image: url(../assets/button-hover.svg);
     }
     
-    &:disabled {
+    &[disabled] {
         background-image: url(../assets/button-disabled.svg);
+        cursor: default;
     }
 }
 
