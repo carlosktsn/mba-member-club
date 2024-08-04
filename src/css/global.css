@@ -51,7 +51,12 @@ body {
         margin-top: 4rem;
         margin-inline: 8em;
         gap: 0.5rem;
-        grid-template-columns: 35% 65%;
+        grid-template-areas: 
+        "user card"
+        "history card"
+        "history progress";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px auto 100px;
     }
 }
 

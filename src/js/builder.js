@@ -5,6 +5,8 @@ const cutsRemaining = document.querySelector(".progress h2");
 const totalCuts = document.querySelector(".history-header p");
 
 export function displayInfo(info) {
+    clear();
+
     userName.textContent = info.name;
     clientSince.textContent = `Cliente desde ${info.clientSince}`;
     cardIdShow.textContent = `ID: ${info.id}`;
@@ -13,6 +15,7 @@ export function displayInfo(info) {
 
     buildList(info.appointmentHistory);
     buildCard(info.loyaltyCard);
+    buildProgress(info.loyaltyCard);
     removeHiddens();
 }
 
@@ -35,9 +38,10 @@ function buildCard(loyaltyCard) {
     }
 }
 
-function buildProgress() {
-    
-}
+function buildProgress(loyaltyCard) {
+    const progressInfo = document.querySelector(".progress-info");
+    progressInfo.textContent = `${loyaltyCard.totalCuts} de ${loyaltyCard.cutsNeeded}`;
+}   
 
 function buildList(history) {
     const historyList = document.querySelector(".history ul");
@@ -55,4 +59,12 @@ function buildList(history) {
 
         historyList.appendChild(li);
     });
+}
+
+function clear() {
+    const slots = document.querySelector(".card .slots");
+    const historyList = document.querySelector(".history ul");
+    
+    slots.replaceChildren();
+    historyList.replaceChildren();
 }

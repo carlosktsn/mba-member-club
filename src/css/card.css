@@ -4,6 +4,7 @@
     border-radius: 1rem;
     padding: 1.5rem 1.25rem 1.25rem;
     margin-top: 0.5rem;
+    grid-area: card;
 
     & h2{
         color: var(--gray-500);
@@ -52,6 +53,12 @@
         &:last-of-type:not(.completed){
             background: url(../assets/icons/gift.svg) no-repeat center/50% var(--gray-200);
         }
+    }
+}
+
+@media (width >=60em) {
+    .card{
+        margin-top: 0;
     }
 }
 

@@ -9,7 +9,8 @@ const searchButton = document.querySelector('#search');
 let cardId;
 cardInput.addEventListener('input', event => {
     if (event.target.value) {
-        cardId = onlyNumbers(event.target.value);
+        // cardId = onlyNumbers(event.target.value);
+        cardId = event.target.value;
         cardInput.value = cardId;
         if (verifyInput(cardId)) {
             searchButton.removeAttribute('disabled');

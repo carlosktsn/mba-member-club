@@ -1,4 +1,4 @@
-const formatRegex = /^\d{3}-\d{3}-\d{3}-\d{3}$/;
+const formatRegex = /^\d{3}\-\d{3}\-\d{3}\-\d{3}$/;
 
 export function verifyInput(inputValue) {
     return formatRegex.test(inputValue);
